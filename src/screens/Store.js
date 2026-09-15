@@ -4,7 +4,6 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import { searchStyle } from './searchStyles'; 
 import { useDebounce } from 'use-debounce';
 import axios from 'axios';
-import { SearchBar } from 'react-native-screens';
 
 export default function Store() {
   
