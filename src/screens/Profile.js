@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, FlatList, TouchableOpacity} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {profileStyle} from './profileStyles';
+import {profileStyle} from './styles';
 
 // Mock user
 const user = {
