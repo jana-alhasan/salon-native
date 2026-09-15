@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {notificationsStyle} from './notificationsStyles';
+import {notificationsStyle} from './styles';
 
 // Mock data
 const notifications = [
