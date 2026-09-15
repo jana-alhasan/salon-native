@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, Image, FlatList} from 'react-native';
-import {offersStyle} from './offersStyles';
+import {offersStyle} from './styles';
 
 // Mock data
 const offers = [
