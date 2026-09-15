@@ -11,7 +11,7 @@ function App() {
  
    <MainContainer/>
    
-<Text>hello</Text>
+
     </>
   );
 }
