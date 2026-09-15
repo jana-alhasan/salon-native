@@ -63,7 +63,7 @@ function MainContainer() {
             }
           },
         })}
-        tabBarOptions={{
+        screenOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'grey',
           labelStyle: { display: 'none' }, 
