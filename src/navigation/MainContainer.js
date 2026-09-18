@@ -32,47 +32,40 @@ function MainContainer() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName={homeName}
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-            size=30;
-            let rn = route.name;
-
-            if (rn === homeName) {
-              iconName = 'home';
-              return <AntDesign name={iconName} size={size} color={color} />;
-            } else if (rn === storeName) {
-              iconName = 'bag-outline';
-              return <Ionicons name={iconName} size={size} color={color} />;
-            } else if (rn === offersName) {
-              iconName = 'local-offer';
-              return (
-                <MaterialIcons name={iconName} size={size} color={color} />
-              );
-            } else if (rn === cartName) {
-              iconName = 'shoppingcart';
-              return <AntDesign name={iconName} size={size} color={color} />;
-            } else if (rn === notificationsName) {
-              iconName = 'notifications-outline';
-              return <Ionicons name={iconName} size={size} color={color} />;
-            } else if (rn === profileName) {
-              iconName = 'menu-open';
-              return (
-                <MaterialIcons name={iconName} size={size} color={color} />
-              );
-            }
-          },
-        })}
-        screenOptions={{
-          activeTintColor: 'tomato',
-          inactiveTintColor: 'grey',
-          labelStyle: { display: 'none' }, 
-          style: {
-            backgroundColor: '#774a96', 
-            height: 70, 
-            borderTopWidth: 0, 
-          },
-        }}>
+       screenOptions={({ route }) => ({
+  tabBarIcon: ({ focused, color, size }) => {
+    let iconName;
+    size = 30;
+    let rn = route.name;
+    if (rn === homeName) {
+      iconName = 'home';
+      return <AntDesign name={iconName} size={size} color={color} />;
+    } else if (rn === storeName) {
+      iconName = 'bag-outline';
+      return <Ionicons name={iconName} size={size} color={color} />;
+    } else if (rn === offersName) {
+      iconName = 'local-offer';
+      return <MaterialIcons name={iconName} size={size} color={color} />;
+    } else if (rn === cartName) {
+      iconName = 'shoppingcart';
+      return <AntDesign name={iconName} size={size} color={color} />;
+    } else if (rn === notificationsName) {
+      iconName = 'notifications-outline';
+      return <Ionicons name={iconName} size={size} color={color} />;
+    } else if (rn === profileName) {
+      iconName = 'menu-open';
+      return <MaterialIcons name={iconName} size={size} color={color} />;
+    }
+  },
+  tabBarActiveTintColor: 'tomato',
+  tabBarInactiveTintColor: 'grey',
+  tabBarLabelStyle: { display: 'none' },
+  tabBarStyle: {
+    backgroundColor: '#774a96',
+    height: 70,
+    borderTopWidth: 0,
+  },
+})}
             <Tab.Screen
           name={homeName}
           component={Home}
