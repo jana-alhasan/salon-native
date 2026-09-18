@@ -19,7 +19,7 @@ const Home = () => {
       console.log(response.data.content);
   
     } catch (error) {
-      console.error(error.response.data || error);
+      console.error(error.response?.data || error);
     }
   };
 
