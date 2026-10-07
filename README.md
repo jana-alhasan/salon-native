@@ -1,35 +1,36 @@
-# Salon Finder — React Native App
+# Salon Finder — React Native Prototype
 
-A mobile app for discovering and browsing beauty salons, built with React Native.
+An **individual React Native prototype** for browsing beauty salons. This repository is separate from the private salon-owner web product I contributed to professionally.
 
-## ✨ Features
-- Browse salons with infinite-scroll pagination, pulling live data from a REST API
-- Debounced real-time search for salons by name
-- Custom bottom-tab navigation with tailored icons and header per screen
-- Salon cards with cover image, rating, and address
+## Implemented code paths
 
-## 🛠️ Built With
-- React Native · React Navigation (Bottom Tabs)
-- Axios (API integration)
-- use-debounce (search optimization)
-- react-native-ratings, react-native-vector-icons
+- Salon list UI built with `FlatList`
+- Paginated salon fetching logic using Axios and `onEndReached`
+- Debounced salon-name search with `use-debounce`
+- Bottom-tab navigation across Home, Store, Cart, Notifications, Offers, and Profile
+- Salon cards with images, ratings, and address information
+- Local/mock UI content for screens that do not have backend integration
 
-## 🚧 Status
+## Tech used in the source
 
-All six screens (Home, Store, Cart, Notifications, Offers, Profile) are implemented
-with a working UI and navigation flow.
+- React Native 0.73 / React 18
+- React Navigation
+- JavaScript
+- Axios
+- `use-debounce`
+- `react-native-ratings`
+- `react-native-vector-icons`
 
-- **Home & Store** are fully connected to a live REST API (salon listings,
-  paginated results, debounced search).
-- **Cart, Notifications, Offers, and Profile** are complete on the UI/UX side
-  and currently use local mock data, pending backend endpoints for
-  bookings, notifications, promotions, and user authentication.
+## Current status
 
-### Planned Next
-- Connect Cart, Notifications, Offers, and Profile to real API endpoints
-- Add persistent cart state (Context API or Redux)
-- Add user authentication for the Profile screen
+The source contains API integration for the Home salon list and Store search. Those calls point to the development API host that was available when the prototype was built.
 
-## 🎯 What I Learned
-Implementing debounced search and paginated API fetching in a real mobile app,
-and structuring navigation with custom tab bar styling.
+**Current limitation:** the configured development host no longer resolves as of October 2026, so this repository should be treated as implementation evidence for the React Native UI, navigation, pagination logic, debounced search, and Axios integration—not as a currently working live-data application.
+
+Cart, Notifications, Offers, and Profile are UI prototypes using local/mock content; this repository does not implement production booking, payment, persistent cart state, or user authentication.
+
+## Evidence boundary
+
+This is not the source code of the private production salon-owner web application from my professional experience, and it should not be used to imply ownership of that product. It is a separate individual learning/prototyping project.
+
+The repository contains JavaScript application files. TypeScript packages/configuration are present in the React Native tooling, but the application source itself is not presented here as TypeScript work.
